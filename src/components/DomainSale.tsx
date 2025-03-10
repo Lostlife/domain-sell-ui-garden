@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Globe, DollarSign, CheckCircle } from "lucide-react";
@@ -7,14 +6,11 @@ import ContactButton from "./ContactButton";
 import Domain3D from "./Domain3D";
 
 const DomainSale = () => {
-  const [domainName, setDomainName] = useState("");
+  const [domainName, setDomainName] = useState("aiagentshub.site");
   
   useEffect(() => {
-    // Get the current domain name from the window location
-    const hostname = window.location.hostname;
-    // Remove www. if present and any subdomain
-    const domain = hostname.replace(/^www\./i, "").split(':')[0];
-    setDomainName(domain);
+    // Set domain name (overriding window.location.hostname detection)
+    setDomainName("aiagentshub.site");
   }, []);
 
   const domainFeatures = [

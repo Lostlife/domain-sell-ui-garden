@@ -5,10 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   useEffect(() => {
-    // Set the page title to match the domain for sale
-    const hostname = window.location.hostname;
-    const domain = hostname.replace(/^www\./i, "").split(':')[0];
-    document.title = `${domain} - Premium Domain For Sale`;
+    // Set the page title to the fixed domain name
+    document.title = `aiagentshub.site - Premium Domain For Sale`;
   }, []);
 
   return (
