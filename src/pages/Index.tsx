@@ -46,7 +46,7 @@ const Index = () => {
       
       <Toaster />
       
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @keyframes float {
           0% {
             transform: translateY(0) translateX(0) rotate(0);
@@ -61,7 +61,7 @@ const Index = () => {
             transform: translateY(0) translateX(0) rotate(360deg);
           }
         }
-      `}</style>
+      `}} />
     </div>
   );
 };
